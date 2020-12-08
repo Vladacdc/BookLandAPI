@@ -16,8 +16,8 @@ namespace Infrastructure
         {
             if (configuration.GetValue<bool>("UseInMemoryDatabase"))
             {
-                // services.AddDbContext<ApplicationDbContext>(options =>
-                //     options.UseInMemoryDatabase("CleanArchitectureDb"));
+                services.AddDbContext<ApplicationDbContext>(options =>
+                    options.UseInMemoryDatabase("BookLandDb"));
             }
             else
             {
@@ -50,7 +50,7 @@ namespace Infrastructure
             {
                 options.AddPolicy("CanPurge", policy => policy.RequireRole("Administrator"));
             });
-
+            
             return services;
         }
     }
