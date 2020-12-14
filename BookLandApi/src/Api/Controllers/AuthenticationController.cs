@@ -1,6 +1,5 @@
 ﻿using System.Threading.Tasks;
 using Application.Authentication.Commands.SignIn;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
