@@ -23,6 +23,3 @@ jobs:
       run: dotnet build ./BookLandApi/BookLandApi.sln --configuration Release --no-restore
     - name: Test
       run: dotnet test ./BookLandApi/BookLandApi.sln --no-restore --verbosity normal
-    - name: SonarCloud Scan
-      uses: SonarSource/sonarcloud-github-action@v1.4
-
